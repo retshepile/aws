@@ -1,17 +1,19 @@
-version:0.2
+version: 0.2
 
 phases:
   install:
-    commannds:
-    - echo installing
+    runtime-versions:
+      java: corretto11
   pre_build:
-    commannds:
-    - echo installing
-  
+    commands:
+      - echo Nothing to do in the pre_build phase...
   build:
-    commannds:
-    - echo installing
-  
+    commands:
+      - echo Build started on
+      - mvn install
   post_build:
-    commannds:
-    - echo installing
+    commands:
+      - echo Build completed on
+artifacts:
+  files:
+    - target/messageUtil-1.0.jar
