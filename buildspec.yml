@@ -1,12 +1,17 @@
 version:0.2
 
-phase:
+phases:
   install:
-  
-  pre-build:
+    commannds:
+    - echo installing
+  pre_build:
+    commannds:
+    - echo installing
   
   build:
+    commannds:
+    - echo installing
   
-  post-build:
-  
-artifacts:
+  post_build:
+    commannds:
+    - echo installing
